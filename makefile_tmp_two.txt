@@ -1,0 +1,9 @@
+ir:
+	$(cc) -S -emit-llvm $(inc) $(file) -O0
+
+
+f:
+	$(cc) opt.ll -o opt
+
+help:
+	$(opt) --help
